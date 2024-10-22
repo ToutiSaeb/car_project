@@ -1,0 +1,188 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #CBB26A; /* Dark color resembling car metal or tires */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Andalus", "Franklin Gothic Medium", Arial, sans-serif; /* Andalus as primary font */
+    padding-bottom: 2rem;
+    font-style: italic; /* Text will be italicized */
+}
+
+.menu {
+    font-family: "Andalus", "Franklin Gothic Medium", Arial, sans-serif; /* Andalus as primary font */
+    color: #ddd;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar 250px wide, main content takes remaining space */
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20rem;
+    background-color: #000;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding-top: 1rem;
+    margin: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #CBB26A;
+}
+
+.image1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+.full-card-container {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.search-image-container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding: 19px;
+    padding-left: 20rem;
+    background-color: black;
+    color: white;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#search {
+    justify-self: center;
+    width: 50%;
+    padding: 10px 5rem;
+    border: none;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+
+#search:focus {
+    border: 2px solid black;
+}
+
+.image1 {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Default: 5 cards for large screens */
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-image: url(images/lav.jpg);
+    height: 350px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.description {
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    backdrop-filter: blur(1px); /* Adds blur effect to the background */
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    /* color: #CBB26A; */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .cards-section {
+        grid-template-columns: repeat(3, 1fr); /* Medium screens: 3 cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-section {
+        grid-template-columns: 1fr; /* Small screens: 1 card */
+    }
+
+    .search-wrapper {
+        width: 100%;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: #CBB26A;
+}
+
+table {
+    margin-top: 50px;
+}
+
+th, td {
+    height: 50px;
+    text-align: center;
+}
+.prices-h {
+    font-weight: bold;
+}

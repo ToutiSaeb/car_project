@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #CBB26A; /* Dark color resembling car metal or tires */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Andalus", "Franklin Gothic Medium", Arial, sans-serif; /* Andalus as primary font */
+    padding-bottom: 2rem;
+    font-style: italic; /* Text will be italicized */
+}
+
+.menu {
+    font-family: "Andalus", "Franklin Gothic Medium", Arial, sans-serif; /* Andalus as primary font */
+    color: #ddd;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar 250px wide, main content takes remaining space */
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20rem;
+    background-color: #000;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding-top: 1rem;
+    margin: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #CBB26A;
+}
+
+.image1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+.full-card-container {
+    margin-left: 70px;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.search-image-container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding: 19px;
+    padding-left: 20rem;
+    background-color: black;
+    color: white;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#search {
+    justify-self: center;
+    width: 50%;
+    padding: 10px 5rem;
+    border: none;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+
+#search:focus {
+    border: 2px solid black;
+}
+
+.image1 {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #CBB26A;
+}
+
+.diagnostic-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    display: flex;
+    height: 930px;
+    padding-bottom: 100px;
+}
+
+.diagnostic-card {
+    width: 450px;
+    min-width: 450px;
+    height: 100%;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.diagnostic-card:last-child {
+    margin-right: 0;
+}
+
+.diagnostic-card img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.diagnostic-card h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #CBB26A;
+}
+.diagnostic-card p {
+    padding: 0px 10px;
+    font-size: 24px;
+}
